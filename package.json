@@ -1,11 +1,12 @@
 {
   "name": "hm-def",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Runtime type checking with Hindley Milner signatures",
   "repository": "https://github.com/xodio/hm-def",
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src/ -d dist/",
+    "prepare": "npm run build",
     "lint": "eslint src/ test/",
     "release": "xyz --repo git@github.com:xodio/hm-def.git --increment",
     "test": "mocha test/**/*.spec.js"
